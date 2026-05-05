@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Your Result</h1>
+
+{% for i in range(4) %}
+    <p>{{ percentages[i] }}% of {{ figures[i] }}</p>
+{% endfor %}
+
+<h2>
+You are most like {{ winner }} ({{ winner_mbti }})
+</h2>
+
+<a href="/">Try Again</a>
+
+</body>
+</html>
